@@ -8,6 +8,7 @@ void times_table(void)
 	int multiplier;
 	int product;
 	int i;
+
 	for (multiplier = 0; multiplier <= 9; multiplier++)
 	{
 		for (i = 0; i <= 9; i++)
