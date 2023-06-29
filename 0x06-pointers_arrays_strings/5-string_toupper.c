@@ -17,4 +17,3 @@ char *string_toupper(char *a)
 	}
 	return (a);
 }
-/* 32 because its the difference in lowercase and uppercase ascii value */
