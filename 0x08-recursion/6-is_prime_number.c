@@ -2,7 +2,7 @@
 
 /**
  * is_prime - prints prime number
- * @n: number 
+ * @n: number
  * @divisor: divisor
  * Return: 1 if prime number , otherwise 0
  */
