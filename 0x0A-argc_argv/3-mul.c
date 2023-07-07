@@ -5,9 +5,9 @@
 /**
  * main - print product of two arguments
  * _atoi - converts to integer
- * @s: string to be converted
- *@argc: argument counter
- @argv: numbers to multiply
+ * @argc: number of arguments
+ * @argv: array of arguments
+ *
  * Return: 0 on success, 1 if not two arguments
  */
 int main(int argc, char *argv[])
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		printf("Error\n");
-		return(1);
+		return (1);
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
@@ -25,5 +25,5 @@ int main(int argc, char *argv[])
 
 	printf("%d\n", result);
 
-	return(0);
+	return (0);
 }
