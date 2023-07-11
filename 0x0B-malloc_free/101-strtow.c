@@ -58,8 +58,8 @@ char *_strncpy(char *str, char *src, int n)
 
 char **strtow(char *str)
 {
-	int i = 0;
-	int j = 0;
+	int i;
+	int j;
 	int k;
 	int count = 0;
 	int len = _strlen(str);
