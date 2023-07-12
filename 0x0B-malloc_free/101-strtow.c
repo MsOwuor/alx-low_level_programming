@@ -1,53 +1,6 @@
 #include "main.h"
-#include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
-
-/**
- * _strlen - returns the length of a string
- * @str: string
- * Return: length
- */
-
-int _strlen(char *str)
-{
-	int longi = 0;
-
-	while (*str != '\0')
-	{
-		longi++;
-		str++;
-	}
-	return (longi);
-}
-
-/**
- * _strncpy - copies a string only taking n bytes from src
- * @str: string to be copied
- * @src: string to be copied
- * @n: number of bites to use from src
- *
- * Return: concatenated string
- */
-
-char *_strncpy(char *str, char *src, int n)
-{
-	char *original_str = str;
-
-	while (*src &&n > 0)
-	{
-		*str = *src;
-		str++;
-		src++;
-		n--;
-	}
-	while (n > 0)
-	{
-		*str = '\0';
-		str++;
-		n--;
-	}
-	return (original_str);
-}
 
 /**
  * strtow - splits a string into words
@@ -62,7 +15,7 @@ char **strtow(char *str)
 	int j;
 	int k;
 	int count = 0;
-	int len = _strlen(str);
+	int len = strlen(str);
 	char **words = NULL;
 
 	if (str == NULL || *str == '\0')
@@ -113,7 +66,7 @@ char **strtow(char *str)
 			return (NULL);
 		}
 		/* Copy the word into the array */
-		_strncpy(words[j], &str[i], k - i);
+		strncpy(words[j], &str[i], k - i);
 		words[j][k - i] = '\0'; /*NULL-terminate the word */
 
 		j++;
