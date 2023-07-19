@@ -48,7 +48,7 @@ int op_div(int a, int b)
 	return ((a) / (b));
 }
 /**
-[O * op_mod - Module of a and b
+ * op_mod - Module of a and b
  * @a: integer
  * @b: integer
  * Return: remainder if succesful
